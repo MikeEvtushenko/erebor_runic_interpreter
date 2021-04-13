@@ -44,6 +44,7 @@ word = input("Enter a word or a pharse in Erebor version of Khuzdul: ")
 # translates as "Dwarven Axes! Dwarves are upon you!"
 # or 
 # word = "balin fundinul uzbadkhazaddumu" 
+# translates as "Balin, Son of Fundin, Lord of Moria"
 initial_word = word
 i = 0
 for length in range(i, len(word) - 1):
