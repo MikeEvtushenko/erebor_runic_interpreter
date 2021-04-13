@@ -32,12 +32,18 @@ runic_dict = {
     "y": "\U000016CB",
     "z": "\U000016DD",
     " ": " ",
+    "\'": "",
+    "!": "",
+    "-": "",
 }
 
 
 word = input("Enter a word or a pharse in Erebor version of Khuzdul: ")
 # can be used as a sample: 
-# word = "baruk khazad khazad aimenu 
+# word = "Daruk Khazad! Khazad ai-menu!"
+# translates as "Dwarven Axes! Dwarves are upon you!"
+# or 
+# word = "balin fundinul uzbadkhazaddumu" 
 initial_word = word
 i = 0
 for length in range(i, len(word) - 1):
