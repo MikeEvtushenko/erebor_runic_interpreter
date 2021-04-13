@@ -40,7 +40,7 @@ runic_dict = {
 
 word = input("Enter a word or a pharse in Erebor version of Khuzdul: ")
 # can be used as a sample: 
-# word = "Daruk Khazad! Khazad ai-menu!"
+# word = "Baruk Khazad! Khazad ai-menu!"
 # translates as "Dwarven Axes! Dwarves are upon you!"
 # or 
 # word = "balin fundinul uzbadkhazaddumu" 
