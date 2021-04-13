@@ -11,15 +11,14 @@ runic_dict = {
     "g": "\U000016A0",
     "h": "\U000016CC",
     "i": "\U000016C1",
-    "j": "\U000016B3",  # не совсем верная руна, но самая близкая к нужной. Та же, что и "С"
+    "j": "\U000016B3",  # The exact rune inexistent in utf-8, using the most resembling one (same as "C")
     "k": "\U000016B4",
     "l": "\U000016C5",
     "m": "\U000016D2",
     "n": "\U000016d8",
     "o": "\U0000039b",
     "p": "\U000016b9",
-    # "q": "?", ни в одном из толкиенских алфавитов нет буквы q,
-    # чем бы заменить?
+    # "q": "?", none of Tolkien's alphabets uses q as a letter, any ideas how to work it around? 
     "q": "",
     "r": "\U000016CF",
     "s": "\U000003bb",
@@ -33,8 +32,10 @@ runic_dict = {
     " ": " ",
 }
 
-syllable_list = []
-word = input("Введите слово или фразу на эреборском наречии Кхуздула: ")
+
+word = input("Enter a word or a pharse in Erebor version of Khuzdul: ")
+# can be used as a sample: 
+# word = "baruk khazad khazad aimenu 
 initial_word = word
 i = 0
 for length in range(i, len(word) - 1):
@@ -47,4 +48,4 @@ for length in range(i, len(word) - 1):
 for i in word:
     if i in runic_dict:
         word = word.replace(i, runic_dict[i])
-print(f"{initial_word.title()} в написании Эреборскими рунами будет выглядеть так: \n{word}")
+print(f"{initial_word.title()} in runes of Erebor will be: \n{word}")
