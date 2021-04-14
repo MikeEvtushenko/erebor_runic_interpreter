@@ -1,5 +1,4 @@
 runic_dict = {
-
     "ch": "\U000016b3",
     "nd": "\U000016EF",
     "qu": "\U000016AA",
@@ -10,7 +9,7 @@ runic_dict = {
     "d": "\U000016A8",
     "e": "\U000016BA",
     "f": "\U000016E9",
-    "g": "\U000016A0",
+    "g": "\U000016A0", 
     "h": "\U000016CC",
     "i": "\U000016C1",
     "j": "\U000016B3",  # The exact rune inexistent in utf-8, using the most resembling one (same as "C")
@@ -20,7 +19,7 @@ runic_dict = {
     "n": "\U000016d8",
     "o": "\U0000039b",
     "p": "\U000016b9",
-    # "q": "?", none of Tolkien's alphabets uses q as a letter, any ideas how to work it around? 
+    # "q": "?", none of Tolkien's alphabets uses q as a letter, any ideas how to work it around?
     "q": "",
     "r": "\U000016CF",
     "s": "\U000003bb",
@@ -39,11 +38,11 @@ runic_dict = {
 
 
 word = input("Enter a word or a pharse in Erebor version of Khuzdul: ").lower()
-# can be used as a sample: 
-# word = "Baruk Khazad! Khazad ai-menu!"
+# can be used as a sample:
+# word = "Baruk Khazad! Khazad ai-menu!".lower()
 # translates as "Dwarven Axes! Dwarves are upon you!"
-# or 
-# word = "balin fundinul uzbadkhazaddumu" 
+# or
+# word = "balin fundinul uzbadkhazaddumu".lower()
 # translates as "Balin, Son of Fundin, Lord of Moria"
 initial_word = word
 i = 0
